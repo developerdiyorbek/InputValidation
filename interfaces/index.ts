@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactElement, ReactNode } from "react";
 
 export interface ChildProps {
   children: ReactNode;
@@ -6,4 +6,16 @@ export interface ChildProps {
 
 export interface LngParams {
   params: { lng: string };
+}
+
+export interface IValues {
+  firstName: string;
+  lastName: string;
+  age: number;
+  login: string;
+  password: string;
+}
+
+export interface IChildren extends ReactElement {
+  props: { validationSchema: any };
 }

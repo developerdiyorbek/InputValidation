@@ -6,12 +6,12 @@ import { Input } from "../ui/input";
 
 function FormStep3() {
   return (
-    <div className="my-2">
+    <div>
       <Field name="age" type="number" as={Input} placeholder="Enter your age" />
       <ErrorMessage
         name="age"
         component="span"
-        className="text-[red] text-[15px]"
+        className="text-red-500 ml-1 mt-1 block"
       />
     </div>
   );

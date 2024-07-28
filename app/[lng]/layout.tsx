@@ -5,6 +5,7 @@ import { ChildProps } from "@/interfaces";
 import { languages } from "@/i18n/settings";
 import { dir } from "i18next";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
+import { Toaster } from "@/components/ui/sonner";
 
 const roboto = Roboto({
   subsets: ["cyrillic"],
@@ -36,6 +37,7 @@ export default function RootLayout({ children, params: { lng } }: Props) {
           disableTransitionOnChange
         >
           {children}
+          <Toaster position="top-right" />
         </ThemeProvider>
       </body>
     </html>

@@ -11,34 +11,19 @@ import {
 } from "../ui/dropdown-menu";
 import Image from "next/image";
 import Link from "next/link";
-import { cn, getCurrentLng } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { useParams, usePathname } from "next/navigation";
 import { lngs } from "@/constants";
 
-interface Props {
-  isMobile?: boolean;
-}
-
-const LanguageDropdown = ({ isMobile = false }: Props) => {
+const LanguageDropdown = () => {
   const { lng } = useParams();
   const pathname = usePathname();
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button
-          variant="ghost"
-          size={"icon"}
-          className={cn(
-            isMobile &&
-              "w-full bg-primary hover:bg-primary/80 transition-colors h-12"
-          )}
-        >
+        <Button variant="ghost" size={"icon"}>
           <Languages />
-          {isMobile && (
-            <span className="ml-2 font-space-grotesk text-base font-medium">
-              {getCurrentLng(lng as string)}
-            </span>
-          )}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56" aria-label="language-dropdown">
