@@ -15,7 +15,7 @@ function Home() {
     <div className="pt-20">
       <Card className="max-w-3xl mx-auto">
         <CardContent className="p-0">
-          <div className="flex items-center justify-between p-3">
+          <div className="flex items-center max-md:flex-col justify-between p-3">
             <h2 className="text-center text-xl">{t("fill")}</h2>
             <p>
               {t("step")} - {step}
