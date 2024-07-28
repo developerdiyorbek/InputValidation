@@ -1,13 +1,23 @@
-import ModeToggle from "@/components/shared/ModeToggle";
-import { Button } from "@/components/ui/button";
-import { translation } from "@/i18n/server";
-import { LngParams } from "@/interfaces";
+"use client";
 
-async function Home({ params: { lng } }: LngParams) {
-  const { t } = await translation(lng);
+import FormValidation from "@/components/shared/FormValidation";
+import { Card, CardContent } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import useTranslate from "@/hooks/useTranslation";
+
+function Home() {
+  const t = useTranslate();
   return (
-    <div>
-      <Button variant={"outline"}>{t("salom")}</Button>
+    <div className="pt-20">
+      <Card className="max-w-3xl mx-auto">
+        <CardContent className="p-0">
+          <h2 className="text-center py-3 text-xl">{t("fill")}</h2>
+          <Separator className="mb-3" />
+          <div className="p-3">
+            <FormValidation />
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 }
