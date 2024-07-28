@@ -17,4 +17,6 @@ export const step2Schema = Yup.object({
     .required("Please confirm your password"),
 });
 
-export const step3Schema = Yup.object({});
+export const step3Schema = Yup.object({
+  description: Yup.string().min(10).required(),
+});

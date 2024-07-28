@@ -3,17 +3,14 @@
 import React from "react";
 import { ErrorMessage, Field } from "formik";
 import { Input } from "../ui/input";
+import useTranslate from "@/hooks/useTranslation";
 
 function FormStep2() {
+  const t = useTranslate();
   return (
     <div>
       <div className="mb-3">
-        <Field
-          name="login"
-          type="text"
-          as={Input}
-          placeholder="Enter your login"
-        />
+        <Field name="login" type="text" as={Input} placeholder={t("login")} />
         <ErrorMessage
           name="login"
           component="span"
@@ -25,7 +22,7 @@ function FormStep2() {
           name="password"
           type="text"
           as={Input}
-          placeholder="Enter your password"
+          placeholder={t("password")}
         />
         <ErrorMessage
           name="password"
@@ -38,7 +35,7 @@ function FormStep2() {
           name="confirmPassword"
           type="text"
           as={Input}
-          placeholder="Confirm your password"
+          placeholder={t("confirmPassword")}
         />
         <ErrorMessage
           name="confirmPassword"

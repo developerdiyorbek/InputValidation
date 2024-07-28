@@ -34,7 +34,7 @@ export function FormikStepper({
       onSubmit={async (values, helpers) => {
         if (isLastStep()) {
           await props.onSubmit(values, helpers);
-          toast.success("Successfully saved");
+          toast.success(t("saved"));
         } else {
           setStep(step + 1);
           helpers.setSubmitting(false);

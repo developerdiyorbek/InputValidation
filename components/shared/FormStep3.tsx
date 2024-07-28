@@ -2,14 +2,16 @@
 
 import React from "react";
 import { ErrorMessage, Field } from "formik";
-import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
+import useTranslate from "@/hooks/useTranslation";
 
 function FormStep3() {
+  const t = useTranslate();
   return (
     <div>
-      <Field name="age" type="number" as={Input} placeholder="Enter your age" />
+      <Field name="description" as={Textarea} placeholder={t("description")} />
       <ErrorMessage
-        name="age"
+        name="description"
         component="span"
         className="text-red-500 ml-1 mt-1 block"
       />

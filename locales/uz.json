@@ -2,5 +2,14 @@
   "fill": "Pastdagi maydonlarni to'ldiring",
   "next": "Keyingi",
   "submit": "Yuborish",
-  "previous": "Oldingi"
+  "previous": "Oldingi",
+  "step": "Bosqich",
+  "firstName": "Ismingizni kiriting",
+  "lastName": "Familyangizni kiriting",
+  "age": "Yoshingizni kiriting",
+  "login": "Loginni kiriting",
+  "password": "Parolingizni kiriting",
+  "confirmPassword": "Parolingizni tasdiqlang",
+  "description": "Xabarnoma qoldiring",
+  "saved": "Malumotlaringiz muvaffaqiyatli saqlandi"
 }

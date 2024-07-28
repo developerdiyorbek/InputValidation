@@ -17,7 +17,9 @@ function Home() {
         <CardContent className="p-0">
           <div className="flex items-center justify-between p-3">
             <h2 className="text-center text-xl">{t("fill")}</h2>
-            <p>Step - {step}</p>
+            <p>
+              {t("step")} - {step}
+            </p>
           </div>
           <Separator className="mb-3" />
           <div className="p-3">

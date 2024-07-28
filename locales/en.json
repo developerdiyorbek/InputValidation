@@ -2,5 +2,14 @@
   "fill": "Fill in the fields below",
   "next": "Next",
   "submit": "Submit",
-  "previous": "Previous"
+  "previous": "Previous",
+  "step": "Step",
+  "firstName": "Enter your first name",
+  "lastName": "Enter your last name",
+  "age": "Enter your age",
+  "login": "Enter your login",
+  "password": "Enter your password",
+  "confirmPassword": "Confirm your password",
+  "description": "Enter description",
+  "saved": "Your data successfully saved"
 }

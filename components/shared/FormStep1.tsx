@@ -2,8 +2,10 @@
 
 import { ErrorMessage, Field } from "formik";
 import { Input } from "../ui/input";
+import useTranslate from "@/hooks/useTranslation";
 
 function FormStep1() {
+  const t = useTranslate();
   return (
     <div>
       <div className="mb-3">
@@ -11,7 +13,7 @@ function FormStep1() {
           name="firstName"
           type="text"
           as={Input}
-          placeholder="Enter your first name"
+          placeholder={t("firstName")}
         />
         <ErrorMessage
           name="firstName"
@@ -24,7 +26,7 @@ function FormStep1() {
           name="lastName"
           type="text"
           as={Input}
-          placeholder="Enter your last name"
+          placeholder={t("lastName")}
         />
         <ErrorMessage
           name="lastName"
@@ -33,12 +35,7 @@ function FormStep1() {
         />
       </div>
       <div>
-        <Field
-          name="age"
-          type="number"
-          as={Input}
-          placeholder="Enter your age"
-        />
+        <Field name="age" type="number" as={Input} placeholder={t("age")} />
         <ErrorMessage
           name="age"
           component="span"
