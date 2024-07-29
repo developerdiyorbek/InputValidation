@@ -40,7 +40,7 @@ function FormStep3() {
         <ErrorMessage
           name="phoneNumber"
           component="span"
-          className="text-red-500 ml-1 mt-1 block"
+          className="text-red-500 ml-1 mt-1 block  max-md:text-[12px]"
         />
       </div>
       <FieldForm name="description" placeholder="description" textArea />

@@ -31,7 +31,7 @@ function FieldForm({
       <ErrorMessage
         name={name}
         component="span"
-        className="text-red-500 ml-1 mt-1 block"
+        className="text-red-500 max-md:text-[12px] ml-1 mt-1 block"
       />
     </div>
   );

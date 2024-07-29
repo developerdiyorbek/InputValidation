@@ -16,8 +16,8 @@ function Home() {
       <Card className="max-w-3xl mx-auto">
         <CardContent className="p-0">
           <div className="flex items-center max-md:flex-col justify-between p-3">
-            <h2 className="text-center text-xl">{t("fill")}</h2>
-            <p>
+            <h2 className="text-center max-md:text-lg text-xl">{t("fill")}</h2>
+            <p className="text-muted-foreground">
               {t("step")} - {step}
             </p>
           </div>
@@ -31,7 +31,9 @@ function Home() {
       {values.firstName && (
         <Card className="max-w-3xl mx-auto mt-10">
           <CardContent className="p-0">
-            <h2 className="text-center text-xl p-3">Your information</h2>
+            <h2 className="text-center max-md:text-lg text-xl p-3">
+              {t("information")}
+            </h2>
             <Separator className="mb-3" />
             <div className="p-3">
               <UserInformation />

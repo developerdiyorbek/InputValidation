@@ -16,5 +16,6 @@
   "ageValue": "Your age :",
   "descValue": "Your description :",
   "usernameValue": "Your username :",
-  "phoneValue": "Your phone number :"
+  "phoneValue": "Your phone number :",
+  "information": "Your information"
 }
