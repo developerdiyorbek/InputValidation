@@ -7,9 +7,13 @@
   "firstName": "Ismingizni kiriting",
   "lastName": "Familyangizni kiriting",
   "age": "Yoshingizni kiriting",
-  "login": "Loginni kiriting",
+  "login": "Username kiriting",
   "password": "Parolingizni kiriting",
   "confirmPassword": "Parolingizni tasdiqlang",
   "description": "Xabarnoma qoldiring",
-  "saved": "Malumotlaringiz muvaffaqiyatli saqlandi"
+  "saved": "Malumotlaringiz muvaffaqiyatli saqlandi",
+  "nameValue": "Sizning to'liq ismingiz :",
+  "ageValue": "Sizning yoshingiz :",
+  "descValue": "Sizning xabaringiz :",
+  "usernameValue": "Sizning username :"
 }

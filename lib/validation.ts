@@ -7,7 +7,7 @@ export const step1Schema = Yup.object({
 });
 
 export const step2Schema = Yup.object({
-  login: Yup.string().min(5).required("Login is required"),
+  username: Yup.string().min(5).required("Login is required"),
   password: Yup.string()
     .min(6)
     .matches(/[A-Z]/, "Password must contain at least one uppercase letter")

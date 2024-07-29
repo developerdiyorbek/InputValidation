@@ -19,8 +19,9 @@ function FieldForm({
   textArea = false,
 }: Props) {
   const t = useTranslate();
+
   return (
-    <div className="mb-3">
+    <div className="mb-2">
       <Field
         name={name}
         type={type}

@@ -12,8 +12,9 @@ export interface IValues {
   firstName: string;
   lastName: string;
   age: number;
-  login: string;
+  username: string;
   password: string;
+  description: string;
 }
 
 export interface IChildren extends ReactElement {

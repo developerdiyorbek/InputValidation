@@ -13,7 +13,7 @@ const initialValues = {
   firstName: "",
   lastName: "",
   age: 0,
-  login: "",
+  username: "",
   password: "",
   confirmPassword: "",
   description: "",

@@ -7,9 +7,13 @@
   "firstName": "Enter your first name",
   "lastName": "Enter your last name",
   "age": "Enter your age",
-  "login": "Enter your login",
+  "login": "Enter your username",
   "password": "Enter your password",
   "confirmPassword": "Confirm your password",
   "description": "Enter description",
-  "saved": "Your data successfully saved"
+  "saved": "Your data successfully saved",
+  "nameValue": "Your full name :",
+  "ageValue": "Your age :",
+  "descValue": "Your description :",
+  "usernameValue": "Your username :"
 }

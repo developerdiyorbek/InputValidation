@@ -5,6 +5,7 @@ import { Separator } from "@/components/ui/separator";
 import { useSteps } from "@/hooks/useSteps";
 import useTranslate from "@/hooks/useTranslation";
 import FormValidation from "../_components/FormValidation";
+import UserInformation from "../_components/UserInformation";
 
 function Home() {
   const t = useTranslate();
@@ -27,6 +28,18 @@ function Home() {
           </div>
         </CardContent>
       </Card>
+
+      {values.firstName && (
+        <Card className="max-w-3xl mx-auto mt-10">
+          <CardContent className="p-0">
+            <h2 className="text-center text-xl p-3">Your information</h2>
+            <Separator className="mb-3" />
+            <div className="p-3">
+              <UserInformation />
+            </div>
+          </CardContent>
+        </Card>
+      )}
     </div>
   );
 }
