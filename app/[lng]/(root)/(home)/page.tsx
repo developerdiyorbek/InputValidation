@@ -12,7 +12,7 @@ function Home() {
   const { step, values } = useSteps();
 
   return (
-    <div className="pt-20">
+    <div className="py-20">
       <Card className="max-w-3xl mx-auto">
         <CardContent className="p-0">
           <div className="flex items-center max-md:flex-col justify-between p-3">

@@ -10,7 +10,7 @@ interface Props {
 function RowItem({ name, value }: Props) {
   const t = useTranslate();
   return (
-    <div className="flex items-center justify-between mb-2">
+    <div className="flex items-center max-sm:flex-col justify-between mb-2">
       <h2>{t(name)}</h2>
       <p>{value}</p>
     </div>
