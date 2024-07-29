@@ -18,5 +18,9 @@ export const step2Schema = Yup.object({
 });
 
 export const step3Schema = Yup.object({
+  phoneNumber: Yup.string()
+    .matches(/^[97]\d{8}$/, "Invalid phone number")
+    .required("Phone number is required")
+    .min(9, "Invalid phone number"),
   description: Yup.string().min(10).required(),
 });

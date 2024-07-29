@@ -17,6 +17,7 @@ const initialValues = {
   password: "",
   confirmPassword: "",
   description: "",
+  phoneNumber: "",
 };
 
 function FormValidation() {

@@ -10,7 +10,6 @@ import UserInformation from "../_components/UserInformation";
 function Home() {
   const t = useTranslate();
   const { step, values } = useSteps();
-  console.log(values);
 
   return (
     <div className="pt-20">

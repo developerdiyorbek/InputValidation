@@ -13,6 +13,7 @@ function UserInformation() {
       />
       <RowItem name="usernameValue" value={`${values.username}`} />
       <RowItem name="ageValue" value={`${values.age}`} />
+      <RowItem name="phoneValue" value={`+998 ${values.phoneNumber}`} />
       <RowItem name="descValue" value={`${values.description}`} />
     </div>
   );

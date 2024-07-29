@@ -15,6 +15,7 @@ export interface IValues {
   username: string;
   password: string;
   description: string;
+  phoneNumber: string;
 }
 
 export interface IChildren extends ReactElement {

@@ -15,5 +15,6 @@
   "nameValue": "Ваше полное имя :",
   "ageValue": "Ваш возраст :",
   "descValue": "Ваше описание :",
-  "usernameValue": "Ваш логин :"
+  "usernameValue": "Ваш логин :",
+  "phoneValue": "Ваш номер телефона :"
 }

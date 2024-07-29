@@ -17,6 +17,7 @@ export const useSteps = create<IUseSteps>((set) => ({
     username: "",
     password: "",
     description: "",
+    phoneNumber: "",
   },
   setStep: (step: number) => set({ step }),
   setValues: (values: IValues) => set({ values }),
