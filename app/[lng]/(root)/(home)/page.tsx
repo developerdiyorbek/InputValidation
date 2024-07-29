@@ -1,10 +1,10 @@
 "use client";
 
-import FormValidation from "@/components/shared/FormValidation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { useSteps } from "@/hooks/useSteps";
 import useTranslate from "@/hooks/useTranslation";
+import FormValidation from "../_components/FormValidation";
 
 function Home() {
   const t = useTranslate();

@@ -13,7 +13,6 @@ import { getOptions, languages, cookieName } from "./settings";
 
 const runsOnServerSide = typeof window === "undefined";
 
-//
 i18next
   .use(initReactI18next)
   .use(LanguageDetector)
@@ -24,7 +23,7 @@ i18next
   )
   .init({
     ...getOptions(),
-    lng: undefined, // let detect the language on client side
+    lng: undefined,
     detection: {
       order: ["path", "htmlTag", "cookie", "navigator"],
     },

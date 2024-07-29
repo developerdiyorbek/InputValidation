@@ -6,7 +6,6 @@ import FormStep1 from "./FormStep1";
 import FormStep2 from "./FormStep2";
 import FormStep3 from "./FormStep3";
 import { FormikStepper } from "./FormikStepper";
-import * as Yup from "yup";
 import { IValues } from "@/interfaces";
 import { step1Schema, step2Schema, step3Schema } from "@/lib/validation";
 
@@ -16,6 +15,8 @@ const initialValues = {
   age: 0,
   login: "",
   password: "",
+  confirmPassword: "",
+  description: "",
 };
 
 function FormValidation() {
