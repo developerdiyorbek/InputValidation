@@ -14,7 +14,7 @@ export const useSteps = create<IUseSteps>((set) => ({
     firstName: "",
     lastName: "",
     age: 0,
-    userName: "",
+    username: "",
     password: "",
     description: "",
   },
